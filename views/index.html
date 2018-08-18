@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Broadcasting</title>
+    <meta name="description" content="Broadcasting live content">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.glitch.com/f02000d1-0802-433c-9f94-0c817a900244%2Fmovie-camera_1f3a5.png?1534519907956" />
+
+    <!-- import the webpage's client-side javascript file -->
+  </head>
+  <body>
+      <div id="left" style="max-width:1000px">
+        <h2>
+          Currently offline 😕
+        </h2>
+        <h1>
+          Broadcast yourself at <a style="text-decoration:none" target="_blank" href="/cast">/cast</a>
+        </h1>
+      </div>
+    <button id="heart" onclick="socket.emit('emoji', {'element':'heart', 'color': getRandomColor()})">
+      ❤️
+    </button>
+    <button id="up" onclick="socket.emit('emoji', {'element':'up', 'color': getRandomColor()})">
+      👍
+    </button>
+    <button id="open" onclick="socket.emit('emoji', {'element':'open', 'color': getRandomColor()})">
+      😮
+    </button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <em>Made by @jajoosam - <a href="https://patreon.com/jajoosam">Support me on Patreon</a></em>;
+    <br>
+    <em>Broadcast yourself at <a href="/cast">/cast</a></em>;
+    <br>
+    <em>Make your own at <a href="https://glitch.com/~broadcasting">glitch.com</a></em>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/fitty.min.js"></script>
+    <script src="/client.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57856524-25"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-57856524-25');
+    </script>
+
+  </body>
+</html>

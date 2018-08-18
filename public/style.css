@@ -1,0 +1,30 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+textarea{
+  height:300px
+}
+
+div{
+  display: block !important;
+  padding-top:none;
+  margin-top:none
+}
+
+/* input{
+  height:500px
+} */
